@@ -210,6 +210,9 @@ form {
     }
     .image {
         margin-right: 40px;
+        img {
+            max-width:80vw;
+        }
     }
 }
 

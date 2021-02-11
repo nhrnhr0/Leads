@@ -9,5 +9,6 @@ def properEconomyView(request):
         phone = request.POST['phone']
         clientInfo = ClientInfo(name=name, phone=phone)
         clientInfo.save()
+        print ('save data', name, phone)
         send_mail(subject='ליד כלכלה נכונה', message='שם: ' + name + ' טלפון: ' + phone, from_email='bot@ms-global.co.il', recipient_list=['m.sglobalwork@gmail.com'])
     return render(request, 'properEconomy.html', {})

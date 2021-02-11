@@ -265,6 +265,10 @@ form .row {
   margin-right: 40px;
 }
 
+.seccound-part .image img {
+  max-width: 80vw;
+}
+
 .disclaimer {
   text-align: center;
   background-color: white;
