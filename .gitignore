@@ -1,0 +1,9 @@
+Leads/secrects.py
+
+db.sqlite3
+static/**
+.vscode/**
+
+**/__pycache__/**
+*.pyc
+env/
