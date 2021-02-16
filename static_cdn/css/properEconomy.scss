@@ -16,7 +16,7 @@ body {
     text-decoration: underline;
 }
 .spa-strong {
-    font-weight: bolder;
+        font-weight: bolder;
     font-size: 1.2em;
 }
 .sec-1 {
@@ -121,6 +121,13 @@ body {
         margin-right:0px;
     }
     flex:1;
+
+    .first {
+        text-align: right;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    }
     .description-title {
         text-align: center;
         font-weight: bolder;
@@ -230,11 +237,13 @@ form {
         flex:1;
         margin-right: 40px;
         .image-points {
-            
             background-color: #FFE599;
             border-radius: 15px;
             max-width: 65vw;
-
+            li {
+                color:black;
+                text-shadow: none;
+            }
         }
         img {
             max-width:80vw;
