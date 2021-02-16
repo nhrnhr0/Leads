@@ -47,6 +47,16 @@ body {
         text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
 
+    .hero-first {
+        margin: auto;
+        border-radius: 20px;
+        width: 70%;
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
     .hero-mid {
         display: flex;
         flex-direction: row-reverse;
@@ -239,12 +249,14 @@ form {
         flex:1;
         margin-right: 40px;
         .image-points {
-            background-color: #FFE599;
+            //background-color: #FFE599;
             border-radius: 15px;
             max-width: 65vw;
             li {
+                background-color: #FFE599;
                 color:black;
                 text-shadow: none;
+                border-radius: 10px;
             }
         }
         img {
