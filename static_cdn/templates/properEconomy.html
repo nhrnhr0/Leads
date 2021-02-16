@@ -13,20 +13,33 @@
 
 <body>
     <div class="sec sec-1 hero">
-        <h1 class="hero-title">עובד כשכיר ב7 השנים האחרונות?</h1>
-        <h2 class="hero-subtitle">משרד האוצר אישר לפרסום כי מדינת ישראל התחילה להחזיר כספים אבודים לבעליהם</h2>
+        <h1 class="hero-title">הקורונה פגעה לך בתוכניות? משלם מיסים כל החיים? כנראה שמדינה חייבת לך <span class="spa-strong under-line">כסף</span>!</h1>
+        <h2 class="hero-subtitle"><span class="spa-strong under-line">7 מילארד </span> שקל ששוכבים בקופת האוצר בלי שאף אחד יודע מה לעשות איתם, לא חבל?</h2>
+        </br>
+        <h3 class="hero-text">83% מהשכירים בישראל זכאים להחזרי מס</h3>
+        <h3 class="hero-text">בשנה האחרונה החזרנו בבמוצע 11,000 שח לשכיר!</h3>
+        <h3 class="hero-text">תנו לנו לבדוק בישבילך כמה כסף מזה <span class="spa-strong under-line">שייך לך</span></h3>
+        <!--
+        <div class="first">
+                        <span>83% מהשכירים בישראל זכאים להחזרי מס</span></br>
+                        <span>בשנה האחרונה החזרנו בבמוצע 11,000 שח לשכיר!</span></br>
+                        <span>תנו לנו לבדוק בישבילך כמה כסף מזה <span class="spa-strong">שייך לך</span></span>
+        </div>
+        -->
         <div class="hero-mid">
             <img class="hero-img" src="{%static 'imgs/image1.jpg' %}" alt="#">
             <div class="description">
-                <div class="description-title">אם ב7 שנים האחרונות:</div>
+                    
+                <div class="description-title">אם ב6 שנים האחרונות:</div>
                 <ul>
                     <li>החלפת מקום עבודה?</li>
+                    <li>אם בחלק מהחודשים בתקופה האמורה עבדתם פחות או לא עבדתם בכלל</li>
+                    <li>אם קיבלתם דמי אבטלה במהלך התקופה</li>
                     <li>טסת לחול?</li>
-                    <li>יש לך ביטוח חיים?</li>
+                    <li>יש לך ביטוח חיים/משכתא? </li>
                     <li>סיימת לימודים?</li>
-                    <li>יש לך משכנתא?</li>
                     <li>תרמת לעמותה מעל
-                        400₪?</li>
+                        190₪?</li>
                     <li>נולד לך ילד/ה?</li>
                 </ul>
 
@@ -47,9 +60,7 @@
             {%csrf_token%}
             <div class="stats">
                 <div class="content">
-                    <div class="first">
-                        83% מהשכירים בישראל זכאים להחזרי מס
-                    </div>
+                    
                     <div class="second">
                         רוצה לבדוק זכאות <span class="under-line">ללא</span> עלות <span class="under-line">וללא</span> התחייבות תשאיר שם וטלפון בטופס ומיד נחזור אליך
                     </div>
@@ -84,13 +95,26 @@
     
         </form>        <div class="form-fotter">
             <div class="form-fotter-content">
+            <div>
+                למה כדאי להיעזר דווקא בנו לצורך בדיקה לזכאות מס?!
                 <div>
-                בשנה האחרונה החזרנו ללקוחותינו מאות אלפי שקלים שאחרת היו נשארים בקופת המדינה.​​​​</div><span>אנו רוצים לעזור גם לך!</span>
-            </div>
+                95% השכירים בארץ רגילים לשלם אלפי שקלים למדינה ונמנעים מההתעסקות בבירוקרטיה, בטופסולוגיה ובכל הכאב ראש הכרוך בדבר
+                </div>
+                <span>
+                    אנחנו מתחייבים לכם:
+                </span>
+            
         </div>
 
         <div class="seccound-part">
             <div class="image">
+            <ul class="image-points">
+                <li> שירות בחינם לאורך כל הדרך עד שאתם מקבלים מה שמגיע לכם!</li>
+                <li> שירות מקצועי ואדיב סביב השעון וזמינות לכל לשאלה </li>
+                <li> אתם לא צריכים להתעסק בשום דבר מלבד לתת לנו את הפרטים המזהים ונצא לדרך</li>
+                <li> תחסכו זמן, כסף וכאב ראש מיותר שאנו יוכולים לפתור לך</li>
+                <li> להינות מהחזרים מקסימליים שאנו נדאג לך!</li>
+            </ul>
                 <img src="{%static 'imgs/accountReturnProf.jpeg'%}"/>
             </div>
             <div class=" description text">
@@ -112,7 +136,7 @@
             <div class="stats stats-2">
                 <div class="content">
                     <div class="first">
-                        הידעת ? ניתן לבקש החזר עד 6 שנים לאחר תום שנת המס שבגינה מבקשים את ההחזר
+                       בשנה האחרונה החזרנו ללקוחותינו מאות אלפי שקלים שאחרת היו נשארים בקופת המדינה
                         
                     </div>
                     <div class="second">

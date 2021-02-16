@@ -15,6 +15,10 @@ body {
 .under-line {
     text-decoration: underline;
 }
+.spa-strong {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
 .sec-1 {
     height: 100%;
     width: 98.5vw;
@@ -26,12 +30,20 @@ body {
         padding:30px;
         text-align: center;
         color:white;
+        //text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
         text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 
     }
     .hero-subtitle {
         text-align: center;
         color:white;
+        //text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+        text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    }
+    .hero-text {
+        text-align: center;
+        color:white;
+        //text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
         text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
 
@@ -94,6 +106,7 @@ body {
         color:black;
         text-align: center;
         font-size: 0.9rem;
+        text-shadow: none;
     }
 }
 .description {
@@ -208,8 +221,21 @@ form {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .description {
+        min-width: 300px;
+        text-shadow: none;
+        flex:2;
+    }
     .image {
+        flex:1;
         margin-right: 40px;
+        .image-points {
+            
+            background-color: #FFE599;
+            border-radius: 15px;
+            max-width: 65vw;
+
+        }
         img {
             max-width:80vw;
         }
@@ -218,7 +244,10 @@ form {
 
 .disclaimer {
     text-align: center;
-    background-color: white;
+    background-color: black;
+    width: 100%;
+    font-size: 0.8rem;
+    text-shadow: none;
 }
 
 .stats-2 {
