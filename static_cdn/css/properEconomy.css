@@ -317,6 +317,7 @@ form .row {
   color: black;
   text-shadow: none;
   border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .seccound-part .image img {
