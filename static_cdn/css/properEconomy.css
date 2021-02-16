@@ -101,6 +101,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
+  color: black;
+  text-shadow: none;
 }
 
 .sec-1 .stats .content .first {
