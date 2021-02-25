@@ -14,7 +14,7 @@
 <body>
     <div class="sec sec-1 hero">
         <h1 class="hero-title">הקורונה פגעה לך בתוכניות? משלם מיסים כל החיים? כנראה שמדינה חייבת לך <span class="spa-strong under-line">כסף</span>!</h1>
-        <h2 class="hero-subtitle"><span class="spa-strong under-line">7 מילארד </span> שקל ששוכבים בקופת האוצר בלי שאף אחד יודע מה לעשות איתם, לא חבל?</h2>
+        <h2 class="hero-subtitle"><span class="spa-strong under-line">7 מיליארד </span> שקל ששוכבים בקופת האוצר בלי שאף אחד יודע מה לעשות איתם, לא חבל?</h2>
         <!--
         </br>
         
@@ -28,26 +28,28 @@
                         <span>תנו לנו לבדוק בישבילך כמה כסף מזה <span class="spa-strong">שייך לך</span></span>
         </div>
         -->
-                <div class="hero-first">
-                        <span>83% מהשכירים בישראל זכאים להחזרי מס</span></br>
-                        <span>בשנה האחרונה החזרנו בבמוצע 11,000 שח לשכיר!</span></br>
-                        <span>תנו לנו לבדוק בישבילך כמה כסף מזה <span class="spa-strong">שייך לך</span></span>
-                </div>
+                
         <div class="hero-mid">
-
-            <img class="hero-img" src="{%static 'imgs/image1.jpg' %}" alt="#">
+            <div class="hero-img-wraper">
+                <div class="hero-first">
+                    <span>83% מהשכירים בישראל זכאים להחזרי מס</span></br>
+                    <span>בשנה האחרונה החזרנו בבמוצע 11,000 שח לשכיר!</span></br>
+                    <span>תנו לנו לבדוק בישבילך כמה כסף מזה <span class="spa-strong">שייך לך</span></span>
+            </div>
+                <img class="hero-img" src="{%static 'imgs/image1.jpg' %}" alt="#">
+                
+            </div>
             <div class="description">
                 
                 <div class="description-title">אם ב6 שנים האחרונות:</div>
                 <ul>
                     <li>החלפת מקום עבודה?</li>
-                    <li>אם בחלק מהחודשים בתקופה האמורה עבדתם פחות או לא עבדתם בכלל</li>
-                    <li>אם קיבלתם דמי אבטלה במהלך התקופה</li>
+                    <li>בחלק מהחודשים בתקופה האמורה עבדתם פחות או לא עבדתם בכלל?</li>
+                    <li>קיבלתם דמי אבטלה במהלך התקופה?</li>
                     <li>טסת לחול?</li>
-                    <li>יש לך ביטוח חיים/משכתא? </li>
+                    <li>יש לך ביטוח חיים/ משכתא? </li>
                     <li>סיימת לימודים?</li>
-                    <li>תרמת לעמותה מעל
-                        190₪?</li>
+                    <li>תרמת לעמותה מעל 190₪?</li>
                     <li>נולד לך ילד/ה?</li>
                 </ul>
 
@@ -92,7 +94,7 @@
                             <button type="submit" class="btn btn-success btn-block btn-lg text-uppercase">לשיחת יעוץ לחץ כאן</button>
                         </div>
                         <div class="spam">
-                            @גם אנחנו שונאים ספאם, אנחנו מתחייבים שלעולם לא נעביר את הפרטים שלך לגורם לצד שלישי או נשלח לך דואר זבל.
+                            @גם אנחנו שונאים ספאם, אנחנו מתחייבים שלעולם לא נשלח לך דואר זבל.
     
                         </div>
                     </div>
@@ -102,14 +104,14 @@
     
         </form>        <div class="form-fotter">
             <div class="form-fotter-content">
-            <h1>
+            <h1 class="form-fotter-content-title">
                 למה כדאי להיעזר דווקא בנו לצורך בדיקה לזכאות מס?!
             </h1>
 
-            <h2>
+            <h2 class="form-fotter-content-subtitle">
                 95% השכירים בארץ רגילים לשלם אלפי שקלים למדינה ונמנעים מההתעסקות בבירוקרטיה, בטופסולוגיה ובכל הכאב ראש הכרוך בדבר
             </h2>
-            <h3>
+            <h3 class="form-fotter-content-title2">
                 אנחנו מתחייבים לכם:
             </h3>
             
@@ -124,8 +126,9 @@
                 <li> תחסכו זמן, כסף וכאב ראש מיותר שאנו יוכולים לפתור לך</li>
                 <li> להינות מהחזרים מקסימליים שאנו נדאג לך!</li>
             </ul>
-                <img src="{%static 'imgs/accountReturnProf.jpeg'%}"/>
             </div>
+            <img src="{%static 'imgs/accountReturnProf.jpeg'%}"/>
+            <!--
             <div class=" description text">
                 <ul>
                     <li>עובדת יצאה לחופשת לידה ב-01.07.2014, וחזרה לעבודתה ב-01.01.2015.</li>
@@ -139,6 +142,7 @@
                     <li>העובדת זכאית להחזר של כ-5,800 ש"ח.</li>
                 </ul>
             </div>
+            -->
         </div>
         <form name="myForm" method="post">
             {%csrf_token%}
@@ -158,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group form-group-2">
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="form-cell">
@@ -176,7 +180,7 @@
                             <button type="submit" class="btn btn-success btn-block btn-lg text-uppercase">לשיחת יעוץ לחץ כאן</button>
                         </div>
                         <div class="spam">
-                            @גם אנחנו שונאים ספאם, אנחנו מתחייבים שלעולם לא נעביר את הפרטים שלך לגורם לצד שלישי או נשלח לך דואר זבל.
+                            @גם אנחנו שונאים ספאם, אנחנו מתחייבים שלעולם לא נשלח לך דואר זבל.
     
                         </div>
                     </div>

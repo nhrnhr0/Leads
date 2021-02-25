@@ -3,7 +3,9 @@
           box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -28,9 +30,10 @@ body {
 }
 
 .sec-1 .hero-title {
-  padding: 30px;
+  padding-top: 30px;
   text-align: center;
   color: white;
+  font-size: 2rem;
   text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
@@ -81,11 +84,13 @@ body {
   }
 }
 
-.sec-1 .hero-mid .hero-img {
-  margin: 50px;
+.sec-1 .hero-mid .hero-img-wraper {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.sec-1 .hero-mid .hero-img-wraper .hero-img {
   max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -94,7 +99,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .sec-1 .hero-mid .hero-img {
+  .sec-1 .hero-mid .hero-img-wraper .hero-img {
     max-width: 80vw;
   }
 }
@@ -119,7 +124,6 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background: #FFE599;
   padding: 5px;
   font-size: 1.2em;
   margin: auto;
@@ -127,16 +131,18 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .sec-1 .stats .content .second {
   width: auto;
-  background: #FFE599;
   /* margin-top: 20px; */
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   padding: 20px;
   border-radius: 20px;
   font-size: 1.2em;
+  background: #43c1fc;
 }
 
 .sec-1 .spam {
@@ -154,6 +160,7 @@ body {
   border-radius: 20px;
   padding: 50px;
   margin-right: 40px;
+  max-width: 80vw;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -183,6 +190,9 @@ body {
 .description .description-footer {
   text-align: right;
   color: white;
+  background: green;
+  padding: 10px;
+  border-radius: 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -194,6 +204,10 @@ body {
 .description .description-footer .birocracy {
   display: inline-block;
   font-size: 0.8em;
+}
+
+.description ul {
+  list-style: none;
 }
 
 .description ul li {
@@ -210,7 +224,17 @@ body {
   width: 20px;
 }
 
-.form-wrapper .form-control-lg, .form-wrapper .btn-lg {
+@media screen and (max-width: 992px) {
+  .description {
+    padding: 5px;
+  }
+  .description ul {
+    padding-right: 0px;
+  }
+}
+
+.form-wrapper .form-control-lg,
+.form-wrapper .btn-lg {
   border-radius: .9rem;
 }
 
@@ -218,12 +242,16 @@ body {
   padding: 10px;
 }
 
-form {
+form .row {
+  margin: 0;
+}
+
+form .form-group {
   background: lightblue;
 }
 
-form .row {
-  margin: 0;
+form .form-group-2 {
+  background-color: #FFE599;
 }
 
 .form-fotter {
@@ -252,12 +280,29 @@ form .row {
   text-align: center;
   color: #fff;
   font-size: 2rem;
-  text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .form-fotter .form-fotter-content span {
   text-decoration: underline;
   font-weight: bolder;
+}
+
+.form-fotter .form-fotter-content .form-fotter-content-title {
+  background: #43c1fc;
+  border-radius: 20px;
+}
+
+.form-fotter .form-fotter-content .form-fotter-content-subtitle {
+  font-size: .8em;
+}
+
+.form-fotter .form-fotter-content .form-fotter-content-title2 {
+  font-weight: 900;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  font-size: 1.5em;
 }
 
 .seccound-part {
@@ -300,16 +345,20 @@ form .row {
           flex: 2;
 }
 
+.seccound-part img {
+  max-width: 80vw;
+}
+
 .seccound-part .image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .seccound-part .image .image-points {
   border-radius: 15px;
-  max-width: 65vw;
+  list-style: none;
 }
 
 .seccound-part .image .image-points li {
@@ -318,10 +367,17 @@ form .row {
   text-shadow: none;
   border-radius: 10px;
   margin-bottom: 5px;
+  font-size: .6em;
+  font-weight: bold;
 }
 
-.seccound-part .image img {
-  max-width: 80vw;
+@media screen and (max-width: 992px) {
+  .seccound-part .image {
+    margin-left: 0px;
+  }
+  .seccound-part .image ul {
+    padding: 0px;
+  }
 }
 
 .disclaimer {
